@@ -18,10 +18,5 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-# Docker
-if [ $(service docker status | awk '{print $4}') = "not" ]; then
-  sudo service docker start > /dev/null
-fi
-
 # Starship
 eval "$(starship init zsh)"
