@@ -9,11 +9,11 @@ ZSH_THEME="cobalt2"
 
 plugins=(
   zsh-autosuggestions
-	aws
-	git
-	docker
+  aws
+  git
+  docker
   docker-compose
-	httpie
+  httpie
 )
 
 source $ZSH/oh-my-zsh.sh
