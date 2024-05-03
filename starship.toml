@@ -1,0 +1,12 @@
+# シェルプロンプトの間に空行を追加します
+add_newline = false
+
+[directory]
+truncate_to_repo = false
+
+[time]
+disabled = false
+
+# packageモジュールを無効にし、プロンプトから完全に隠します
+[package]
+disabled = true
