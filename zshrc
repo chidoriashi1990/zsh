@@ -10,6 +10,7 @@ ZSH_THEME="dst"
 plugins=(
   zsh-autosuggestions
   aws
+  gh
   git
   docker
   docker-compose
@@ -31,3 +32,12 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init --path)"
 
 eval "$(pyenv init -)"
+
+# github cli
+if type brew &>/dev/null
+then
+  FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
+
+  autoload -Uz compinit
+  compinit
+fi
