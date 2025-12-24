@@ -15,6 +15,7 @@ plugins=(
   docker
   docker-compose
   httpie
+  zsh-uv-env
 )
 
 source $ZSH/oh-my-zsh.sh
